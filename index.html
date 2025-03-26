@@ -48,19 +48,23 @@ body{
         
 
     .textsam {
-    font-size: 60px; /* Large and bold */
-    font-weight: bold;
+    font-size: 70px; /* Bigger for impact */
+    font-weight: 900;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(45deg, #003300, #004d00, #1a1a1a);
+    background: linear-gradient(45deg, #FFD700, #FFB700, #D4AF37); /* Rich gold tones */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
-    animation: subtleGlow 2s infinite alternate;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9), 
+                 2px 2px 5px rgba(255, 215, 0, 0.8); /* Deep shadow for a 3D effect */
+    letter-spacing: 3px; /* Slight spacing for elegance */
+    text-transform: uppercase; /* Adds authority */
+    animation: shineEffect 3s infinite alternate;
 }
 
-@keyframes subtleGlow {
-    0% { text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); }
-    100% { text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.9); }
+@keyframes shineEffect {
+    0% { text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9); }
+    100% { text-shadow: 6px 6px 15px rgba(0, 0, 0, 1), 
+                    3px 3px 8px rgba(255, 215, 0, 1); }
 }
 
     .social-icons {
