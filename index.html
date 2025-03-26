@@ -46,20 +46,7 @@ margin: 0;
    
 
         .textsam {
-            <!-- font-size: 120px; /* Increased size */
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            font-family: Arial, sans-serif;
-            background-color: #333;
-            padding: 60px;
-            border-radius: 25px;
-            box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
-            transform: rotate(-15deg);-->
-
+          
             font-size: 50px;
             font-weight: bold;
             background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #0fff00, #00fff7, #2600ff, #a200ff);
@@ -74,10 +61,11 @@ margin: 0;
             100% { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
         }
 
-       
+
     .social-icons {
             display: flex;
-            gap: 40px; 
+            justify-content: center;
+            gap: 40px;
             margin-bottom: 20px;
         }
 
@@ -99,9 +87,11 @@ margin: 0;
             background-color: black;
             margin: 20px 0;
         }
+    
 
      /* Navigation Bar */
-        .nav {
+        
+     .nav {
             display: flex;
             justify-content: center;
             gap: 30px;
@@ -110,14 +100,19 @@ margin: 0;
 
         .nav a {
             text-decoration: none;
-            color: black;
+            color: white;
             font-size: 18px;
             font-weight: bold;
             padding: 10px 15px;
             border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
             transition: 0.3s ease-in-out;
         }
 
+        .nav a:hover {
+            background-color: #ff00ff;
+            color: white;
+        }
        
       
     </style>
