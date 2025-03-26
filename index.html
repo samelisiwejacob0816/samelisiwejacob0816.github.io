@@ -45,7 +45,7 @@ body{
 }
    
 
-        .textsam {
+        <!-- .textsam {
         
             font-size: 60px;
             font-weight: bold;
@@ -61,7 +61,23 @@ body{
           0% { text-shadow: 0 0 10px #ff00ff; }
             100% { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
         
-     }
+     } -->
+
+    .textsam {
+    font-size: 60px; /* Large and bold */
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #003300, #004d00, #1a1a1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    animation: subtleGlow 2s infinite alternate;
+}
+
+@keyframes subtleGlow {
+    0% { text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); }
+    100% { text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.9); }
+}
 
     .social-icons {
             display: flex;
