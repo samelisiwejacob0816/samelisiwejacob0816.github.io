@@ -97,41 +97,41 @@ body{
         }
     
 
-     /* Navigation Bar */
-        
-     .nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 10px;
-        }
+    /* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
 
-        .nav a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 10px 15px;
-            border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: 0.3s ease-in-out;
-        }
+.nav a {
+    position: relative; /* Needed for tooltip positioning */
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
 
-        .nav a:hover {
-            background-color: #ff00ff;
-            color: white;
-        }
+.nav a:hover {
+    background-color: #ff00ff;
+    color: white;
+}
 
-    /* Tooltip bubble */
+/* Tooltip Bubble */
 .nav a::after {
-    content: attr(data-info); /* Get the info from the data attribute */
+    content: attr(data-info); /* Uses the data-info attribute */
     position: absolute;
     left: 50%;
-    bottom: -40px; /* Position below the nav */
+    bottom: -50px; /* Positioned properly below the nav item */
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 8px;
+    padding: 8px 12px;
     border-radius: 5px;
     white-space: nowrap;
     font-size: 14px;
