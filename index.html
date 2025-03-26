@@ -121,6 +121,31 @@ body{
             background-color: #ff00ff;
             color: white;
         }
+
+    /* Tooltip bubble */
+.nav a::after {
+    content: attr(data-info); /* Get the info from the data attribute */
+    position: absolute;
+    left: 50%;
+    bottom: -40px; /* Position below the nav */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.nav a:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
        
       
     </style>
@@ -151,11 +176,11 @@ body{
     
     <!-- Navigation Menu -->
         <div class="nav">
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Get in touch</a>
-        </div>
+    <a href="#about" data-info="Learn more about me">About Me</a>
+    <a href="#skills" data-info="See my skills">Skills</a>
+    <a href="#projects" data-info="Check out my projects">Projects</a>
+    <a href="#contact" data-info="Get in touch with me">Get in touch</a>
+</div>
 </div>
       
 
