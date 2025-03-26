@@ -36,34 +36,34 @@ body{
    .name-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center horizontally */
-    padding: 5px 15px;
-    border-radius: 8px;
+    justify-content: center;
     text-align: center;
-    box-shadow: none; /* Removes the box shadow */
-    background: none; /* Removes background color */
 }
 
-/* Update all text inside */
+/* Set text to pink */
 .hi-text, .s-puppet, .rest-of-name {
-    color: #ff00ff; /* Pink color */
+    color: #ff00ff !important; /* Ensures it's pink */
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
-        /* Animated S-Puppet */
-        .s-puppet {
-            font-size: 60px;
-            font-weight: bold;
-            font-family: 'Poppins', sans-serif;
-            color: white;
-            display: flex;
-            align-items: center;
-            position: relative;
-            transition: transform 0.3s ease-in-out;
-        }
+/* Remove the white color */
+.s-puppet, .rest-of-name {
+    color: #ff00ff !important; /* Ensures it overrides other styles */
+}
 
-        .s-puppet:hover {
-            transform: rotate(-5deg) scale(1.1);
-        }
+/* Fix alignment */
+.s-puppet {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.s-puppet:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
 
         /* Eyes */
         .eyes {
