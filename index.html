@@ -147,17 +147,40 @@ body{
     transform: translateX(-50%) translateY(-5px);
 }
 
-    .intro-text {
-    font-size: 18px;
-    color: white;
-    max-width: 600px;
+    .intro-container {
+    margin-top: 20px;
+    max-width: 700px;
     text-align: center;
-    margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    border-radius: 10px;
-    line-height: 1.6;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro-text {
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+.highlight {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #ff00ff; }
+    100% { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
        
       
@@ -171,11 +194,17 @@ body{
          
        <h1 class="textsam">Sam</h1>
 
-        <p class="intro-text">
-    Passionate about technology and innovation, I thrive on solving complex problems and continuously learning new skills 
-    to stay ahead in the ever-evolving tech industry. 
-    I am committed to creating impactful digital experiences that make life easier for users. Welcome to my space!
-</p>
+        <div class="intro-container">
+    <p class="intro-text">
+        <span class="highlight">Software Engineer.</span> 
+        <span class="highlight">Problem Solver.</span> 
+        <span class="highlight">Innovator.</span>  
+        <br><br>
+        I am passionate about turning ideas into reality through **clean, efficient, and user-friendly code**. 
+        With a love for problem-solving and a constant drive to learn, I build digital experiences that make an impact.  
+        **Welcome to my world of creativity and technology!**
+    </p>
+</div>
        
     </header>
        
