@@ -389,18 +389,8 @@ body{
     <p style="color: white;">💼 LinkedIn: <a href="https://www.linkedin.com/in/samelisiwe-phakama-jacob-187142212/" target="_blank" style="color: #ff00ff;">My LinkedIn</a></p>
 </div>
 
-      <script>
-    function toggleSkills() {
-        var skillsDiv = document.getElementById("skills-section");
-        if (skillsDiv.style.display === "none" || skillsDiv.style.display === "") {
-            skillsDiv.style.display = "block"; // Show the skills
-        } else {
-            skillsDiv.style.display = "none"; // Hide the skills
-        }
-    }
-</script>
-
-      <script>
+     
+   <script>
     function toggleSkills() {
         var skillsDiv = document.getElementById("skills-section");
         var contactDiv = document.getElementById("contact-section");
@@ -409,11 +399,9 @@ body{
         contactDiv.style.display = "none";
 
         // Toggle "Skills"
-        if (skillsDiv.style.display === "none" || skillsDiv.style.display === "") {
-            skillsDiv.style.display = "block";
-        } else {
-            skillsDiv.style.display = "none";
-        }
+        skillsDiv.style.display = (skillsDiv.style.display === "none" || skillsDiv.style.display === "") 
+            ? "block" 
+            : "none";
     }
 
     function toggleContact() {
@@ -424,11 +412,9 @@ body{
         skillsDiv.style.display = "none";
 
         // Toggle "Get in Touch"
-        if (contactDiv.style.display === "none" || contactDiv.style.display === "") {
-            contactDiv.style.display = "block";
-        } else {
-            contactDiv.style.display = "none";
-        }
+        contactDiv.style.display = (contactDiv.style.display === "none" || contactDiv.style.display === "") 
+            ? "block" 
+            : "none";
     }
 </script>
         </body>
