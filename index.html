@@ -142,11 +142,6 @@ body{
     border-color: #ff00ff; /* Changes border to pink */
 }
    
-
-        
-
-
-
     .social-icons {
             display: flex;
             justify-content: center;
@@ -321,7 +316,7 @@ body{
     <!-- Navigation Menu -->
         <div class="nav">
   <a href="https://drive.google.com/file/d/1a3k3zbLTJzmRjy5XsvvbuaD3_1rvISTP/view?usp=drive_link" target="_blank" data-info="View my resume">Resume</a>
-    <a href="#skills" data-info="See my skills">Skills</a>
+    <a href="#" data-info="See my skills" onclick="toggleSkills()">Skills</a>
     <a href="#projects" data-info="Check out my projects">Projects</a>
      <a href="#" data-info="Reach out to me" onclick="toggleContact()">Get in touch</a>
 </div>
@@ -353,6 +348,19 @@ body{
         }
     }
 </script>
+
+      <div id="skills-section" class="skills-container" style="display: none; text-align: center; margin-top: 20px;">
+    <h2 style="color: white;">My Skills</h2>
+    <div class="skills-list">
+        <div class="skill"><i class="fab fa-java"></i> Java</div>
+        <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+        <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill"><i class="fas fa-database"></i> SQL</div>
+        <div class="skill"><i class="fab fa-python"></i> Python</div>
+        <div class="skill"><i class="fab fa-git-alt"></i> Git</div>
+    </div>
+</div>
 
         </body>
   
