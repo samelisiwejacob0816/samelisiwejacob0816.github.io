@@ -261,6 +261,40 @@ body{
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+    .skills-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    font-size: 20px;
+    color: white;
+    background: #ff00ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill i {
+    font-size: 24px;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
        
       
     </style>
@@ -361,6 +395,17 @@ body{
         <div class="skill"><i class="fab fa-git-alt"></i> Git</div>
     </div>
 </div>
+
+      <script>
+    function toggleSkills() {
+        var skillsDiv = document.getElementById("skills-section");
+        if (skillsDiv.style.display === "none" || skillsDiv.style.display === "") {
+            skillsDiv.style.display = "block"; // Show the skills
+        } else {
+            skillsDiv.style.display = "none"; // Hide the skills
+        }
+    }
+</script>
 
         </body>
   
