@@ -316,41 +316,43 @@ body{
        <!-- Horizontal Line -->
         <hr class="separator">
 
-    <div id="contact-info" class="contact-container">
-    <h2 style="color: white; text-align: center;">Get in Touch</h2>
-    <p style="color: white; font-size: 18px; text-align: center;">
-        📩 Email: <a href="mailto:samelisiwe@example.com" style="color: white; text-decoration: none;">
-            samelisiwe@example.com
-        </a>
-    </p>
-    <p style="color: white; font-size: 18px; text-align: center;">
-        🔗 LinkedIn: <a href="https://www.linkedin.com/in/samelisiwe-phakama-jacob-187142212/" 
-            target="_blank" style="color: white; text-decoration: none;">
-            Samelisiwe Phakama Jacob
-        </a>
-    </p>
-</div>
+    
     
     <!-- Navigation Menu -->
         <div class="nav">
   <a href="https://drive.google.com/file/d/1a3k3zbLTJzmRjy5XsvvbuaD3_1rvISTP/view?usp=drive_link" target="_blank" data-info="View my resume">Resume</a>
     <a href="#skills" data-info="See my skills">Skills</a>
     <a href="#projects" data-info="Check out my projects">Projects</a>
-         <a href="#contact" data-info="Reach out to me">Get in touch</a>
+     <a href="#" data-info="Reach out to me" onclick="toggleContact()">Get in touch</a>
 </div>
 </div>
 
-      <section id="contact" class="contact-container">
+      <!-- Contact Info (Hidden by Default) -->
+<div id="contact-info" class="contact-container" style="display: none; text-align: center; margin-top: 20px;">
     <h2 style="color: white;">Get in Touch</h2>
     <p style="color: white; font-size: 18px;">
-        📩 Email: <a href="mailto:samelisiwejacob@gmail.com" style="color: #ff00ff;">samelisiwe@example.com</a>
+        📩 Email: <a href="mailto:samelisiwe@example.com" style="color: white; text-decoration: none;">
+            samelisiwe@example.com
+        </a>
     </p>
     <p style="color: white; font-size: 18px;">
-        🔗 LinkedIn: <a href="https://www.linkedin.com/in/samelisiwe-phakama-jacob-187142212/" target="_blank" style="color: #ff00ff;">
+        🔗 LinkedIn: <a href="https://www.linkedin.com/in/samelisiwe-phakama-jacob-187142212/" 
+            target="_blank" style="color: white; text-decoration: none;">
             Samelisiwe Phakama Jacob
         </a>
     </p>
-</section>
+</div>
+
+      <script>
+    function toggleContact() {
+        var contactDiv = document.getElementById("contact-info");
+        if (contactDiv.style.display === "none" || contactDiv.style.display === "") {
+            contactDiv.style.display = "block"; // Show the contact info
+        } else {
+            contactDiv.style.display = "none"; // Hide the contact info
+        }
+    }
+</script>
 
         </body>
   
