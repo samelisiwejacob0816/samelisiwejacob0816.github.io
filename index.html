@@ -130,11 +130,13 @@ body{
 
 .bottom-image {
     margin-bottom: 20px;
-    width: 100px;
-    height: 100px;
+     width: 80px; /* 100px*/
+        height: 80px;
     border-radius: 50%;
     border: 5px solid black; /* Default border color */
     transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
+
+    
 }
 
 .bottom-image:hover {
@@ -150,9 +152,10 @@ body{
         }
 
         .social-icons a {
-            font-size: 30px;
+            font-size: 24px;/*30px*/
             color: white;
             transition: color 0.3s ease-in-out;
+            
         }
 
         .social-icons a:hover {
@@ -176,6 +179,8 @@ body{
     justify-content: center;
     gap: 30px;
     margin-top: 10px;
+    flex-direction: column; /* Stack navigation links */
+        gap: 10px;
 }
 
 .nav a {
@@ -188,6 +193,10 @@ body{
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
+
+     width: 80%; /* Make nav buttons wider */
+        text-align: center;
+    
 }
 
 .nav a:hover {
@@ -222,6 +231,8 @@ body{
 
   .intro-container {
      border-left: 15px solid #ff00ff;
+       font-size: 16px;
+        padding: 10px;
       max-width: 900px;
     
     overflow: hidden;
@@ -280,6 +291,9 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    
+     flex-direction: column; /* Stack skills instead of horizontal */
+        align-items: center;
 }
 
 .skill {
@@ -300,6 +314,26 @@ body{
 
 .skill:hover {
     transform: scale(1.1);
+}
+
+    @media (max-width: 480px) {
+    .hi-text, .s-puppet, .rest-of-name {
+        font-size: 30px;
+    }
+
+    .intro-container {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .skills-container {
+        padding: 10px;
+    }
+
+    .nav a {
+        width: 100%;
+        font-size: 16px;
+    }
 }
        
       
