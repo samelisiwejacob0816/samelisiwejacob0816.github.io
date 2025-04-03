@@ -183,7 +183,16 @@ body{
             margin: 20px auto;
         } 
 
-    
+    @keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
     /* Navigation Bar */
 .nav {
@@ -191,7 +200,7 @@ body{
    justify-content: center;
     gap: 30px;
     margin-top: 10px;
-    /* Stack navigation links */
+    animation: slideInFromTop 1s ease-out forwards;
         
 }
 
