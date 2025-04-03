@@ -315,25 +315,87 @@ body{
     transform: scale(1.1);
 }
 
-    @media (max-width: 480px) {
-    .hi-text, .s-puppet, .rest-of-name {
-        font-size: 30px;
-    }
+    @media (max-width: 768px) {
+       /* Adjust text sizes for smaller screens */
+       .hi-text, .s-puppet, .rest-of-name {
+           font-size: 40px;
+       }
 
-    .intro-container {
-        font-size: 14px;
-        padding: 8px;
-    }
+       .s-puppet {
+           font-size: 40px;
+       }
 
-    .skills-container {
-        padding: 10px;
-    }
+       .rest-of-name {
+           font-size: 40px;
+       }
 
-    .nav a {
-        width: 100%;
-        font-size: 16px;
-    }
-}
+       /* Ensure name container stacks properly */
+       .name-container {
+           flex-direction: column;
+           gap: 5px;
+       }
+
+       /* Adjust intro container for smaller screens */
+       .intro-container {
+           font-size: 14px;
+           padding: 10px;
+           max-width: 90%;
+       }
+
+       /* Make social icons stack on small screens */
+       .social-icons {
+           flex-direction: row;
+           gap: 20px;
+       }
+
+       /* Ensure navigation is easily clickable */
+       .nav {
+           flex-direction: column;
+           align-items: center;
+           gap: 15px;
+       }
+
+       .nav a {
+           font-size: 16px;
+           padding: 8px 12px;
+           width: 80%;
+           text-align: center;
+       }
+
+       /* Adjust skills section layout */
+       .skills-list {
+           flex-direction: column;
+           gap: 10px;
+       }
+
+       /* Make the bottom image smaller on mobile */
+       .bottom-image {
+           width: 60px;
+           height: 60px;
+       }
+   }
+
+   @media (max-width: 480px) {
+       /* Further reduce font size on extra small screens */
+       .hi-text, .s-puppet, .rest-of-name {
+           font-size: 30px;
+       }
+
+       .intro-container {
+           font-size: 12px;
+           padding: 8px;
+       }
+
+       .nav a {
+           font-size: 14px;
+           padding: 6px 10px;
+       }
+
+       .bottom-image {
+           width: 50px;
+           height: 50px;
+       }
+   }
        
       
     </style>
