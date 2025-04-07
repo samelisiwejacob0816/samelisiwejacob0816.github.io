@@ -417,7 +417,41 @@ body{
            height: 50px;
        }
    }
-       
+
+
+    body.dark-mode {
+    background-image: none;
+    background-color: #121212;
+}
+
+.dark-mode .intro-container,
+.dark-mode .skills-container,
+.dark-mode .contact-container {
+    background: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+}
+
+.dark-mode .intro-text,
+.dark-mode .highlight,
+.dark-mode .skill,
+.dark-mode .contact-container a,
+.dark-mode .social-icons a,
+.dark-mode .nav a {
+    color: #f0f0f0;
+}
+
+.dark-mode .nav a {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .nav a:hover {
+    background-color: #bb86fc;
+    color: #000;
+}
+
+.dark-mode .separator {
+    background-color: #fff;
+}
       
     </style>
  </head>
