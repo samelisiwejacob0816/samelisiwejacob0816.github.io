@@ -585,6 +585,20 @@ body{
             : "none";
     }
 </script>
+
+      <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    toggleBtn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        // Optional: change button text
+        toggleBtn.textContent = 
+            document.body.classList.contains("dark-mode") 
+            ? "Light Theme" 
+            : "Dark Theme";
+    });
+</script>
         </body>
   
 </html>
